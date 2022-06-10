@@ -37,7 +37,7 @@ export default function Layout({
           <>
             <Image
               priority
-              src="/images/profile.jpg"
+              src="/images/profile.jpeg"
               className={utilStyles.borderCircle}
               height={144}
               width={144}
