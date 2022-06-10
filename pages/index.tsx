@@ -25,20 +25,27 @@ export default function Home({
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p className="text-xl">
-          Hello, I&apos;m Shu. I&apos;m a Software enginer and a
-          translator(Englist/Japanese). You can contact me on Twitter
+        <p className="text-xl w-full">
+          Hello, I&apos;m Mind0Bender. I&apos;m a Web Developer. You can contact
+          me via <a href="mailto:mrcircuit1234@gmail.com">mail</a>
         </p>
         <br />
-        <p className="text-2xl">
+        <p className="text-xl">
           (This is a sample website - I built this site for learning Next.js)
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg + " font-bold text-2xl"}>Blog</h2>
-        <ul className={utilStyles.list}>
+        <h2 className={utilStyles.headingLg + " font-bold text-2xl"}>Blogs</h2>
+        <ul
+          className={"flex flex-col justify-between items-baseline gap-4 py-2"}
+        >
           {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
+            <li
+              className={
+                "border-2 py-2 w-full transform duration-300 hover:scale-105 px-4 rounded-lg border-blue-100"
+              }
+              key={id}
+            >
               <Link href={`/posts/${id}`}>
                 <a className={utilStyles.listItemLink}>{title}</a>
               </Link>
