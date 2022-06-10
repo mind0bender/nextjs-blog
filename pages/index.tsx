@@ -25,7 +25,7 @@ export default function Home({
       </Head>
       <section className={utilStyles.headingMd}>
         <p className="text-xl">
-          Hello, I'm Shu. I'm a Software enginer and a
+          Hello, I&apos;m Shu. I&apos;m a Software enginer and a
           translator(Englist/Japanese). You can contact me on Twitter
         </p>
         <br />
